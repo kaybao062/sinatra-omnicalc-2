@@ -26,21 +26,23 @@
         </td>
       </tr>
     </table>
+    <h1>New addition</h1>
 
-    <h1>Division</h1>
+    <form action="/wizard_add">
+      <label for="form_first_number">
+            Add this:
+      </label>
+      <input id="form_first_number" name="first_num" text="text">
 
-    <dl>
-      <dt>First number</dt>
-      <dd><%= @first_num %></dd>
+      <label for="form_second_number">
+            to this:
+      </label>
+      <input id="form_second_number" name="second_num" text="text">
 
-      <dt>Second number</dt>
-      <dd><%= @second_num %></dd>
-
-      <dt>Result</dt>
-      <dd><%= @result %></dd>
-    </dl>
-
-    <a href="/divide">Do another division</a>
+      <button>
+        Add!
+      </button>
+    </form>
 
   </body>
 </html>

@@ -1,5 +1,48 @@
-<h1>New multiplication</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sinatra Omnicalc 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
 
-<form action="/">
+  <body>
+    <table style="width: 100%" border="1">
+      <tr>
+        <td>
+          <a href="/add">Add</a>
+        </td>
 
-</form>
+        <td>
+          <a href="/subtract">Subtract</a>
+        </td>
+
+        <td>
+          <a href="/multiply">Multiply</a>
+        </td>
+
+        <td>
+          <a href="/divide">Divide</a>
+        </td>
+      </tr>
+    </table>
+    <h1>New multiplication</h1>
+
+    <form action="/wizard_multiply">
+      <label for="form_first_number">
+            Multiply this:
+      </label>
+      <input id="form_first_number" name="first_num" text="text">
+
+      <label for="form_second_number">
+            by this:
+      </label>
+      <input id="form_second_number" name="second_num" text="text">
+
+      <button>
+        Multiply!
+      </button>
+    </form>
+
+  </body>
+</html>
